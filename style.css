@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.container > .grid-col-span{
+    grid-column: 2 / span 2;
+    /* zacznij od kolumny 2, złącz 2 kolumny licząc od kolumny 2 włącznie z nim */
+}
+
+.container > .grid-row-span{
+    grid-row: 2 / span 2;
+    /* zacznij od wiresza 2, złącz 2 wiersze licząc od wiersza 2 włącznie z nim */
+}
+
+.container > div{
+    border-radius: 5px;
+    background-color: rgb(220, 220, 220);
+}
